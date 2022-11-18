@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/Road"
+        android:layout_width="0dp"
+        android:layout_height="415dp"
+        android:adjustViewBounds="true"
+        android:rotation="0"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/FinishLine"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/road" />
+
+    <ImageView
+        android:id="@+id/Player2"
+        android:layout_width="125dp"
+        android:layout_height="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.721"
+        app:srcCompat="@drawable/car2" />
+
+    <ImageView
+        android:id="@+id/Player1"
+        android:layout_width="125dp"
+        android:layout_height="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.278"
+        app:srcCompat="@drawable/carcar" />
+
+    <ImageView
+        android:id="@+id/FinishLine"
+        android:layout_width="50dp"
+        android:layout_height="410dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/finish" />
+
+    <Button
+        android:id="@+id/GO1"
+        android:layout_width="80dp"
+        android:layout_height="54dp"
+        android:enabled="false"
+        android:text="GO"
+        android:visibility="invisible"
+        app:iconTint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/Road"
+        app:layout_constraintHorizontal_bias="0.024"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.955" />
+
+    <Button
+        android:id="@+id/GO2"
+        android:layout_width="80dp"
+        android:layout_height="54dp"
+        android:enabled="false"
+        android:onClick="onClickPlayer2"
+        android:text="GO"
+        android:visibility="invisible"
+        app:iconTint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.903"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.955" />
+
+    <Button
+        android:id="@+id/Start"
+        android:layout_width="90dp"
+        android:layout_height="54dp"
+        android:onClick="StartButton"
+        android:text="START"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.955" />
+
+    <TextView
+        android:id="@+id/winTV"
+        android:layout_width="700dp"
+        android:layout_height="130dp"
+        android:text="PLAYER 1 WIN!!!"
+        android:textSize="96sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/Road"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
